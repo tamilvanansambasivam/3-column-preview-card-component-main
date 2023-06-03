@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraph*/
+    --Very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+
+    color: var(--Very-light-gray);
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 60px;
+    color: var(--Transparent-white);
+    word-spacing: 5px;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display:flex;
+    height: 500px;
+    margin: 100px;
+    width: 1000px;
+   
+    border-radius: 10px;
+    overflow: hidden;
+   
+
+
+
+    
+}
+
+.first{
+    background-color: var(--Bright-orange);
+    padding: 60px;
+    overflow: hidden;
+
+    
+}
+
+.second{
+    background-color: var(--Dark-cyan);
+    padding: 60px;
+
+}
+
+.third{
+    background-color: var(--Very-dark-cyan);
+    padding: 60px;
+
+}
+
+.button{
+    border-radius: 30px;
+    background-color: var(--Very-light-gray);
+    height: 50px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+
+.first .button{
+    color: var(--Bright-orange);
+}
+
+.second .button{
+    color:var(--Dark-cyan);
+}
+
+.third .button{
+    color:var(--Very-dark-cyan);
+}
+
+.button1:hover{
+    color: var(--Very-light-gray);
+    background-color: var(--Bright-orange);
+    border: 2px solid var(--Very-light-gray);
+    cursor: pointer;
+}
+
+.button2:hover{
+    color: var(--Very-light-gray);
+    background-color: var(--Dark-cyan);
+    border: 2px solid var(--Very-light-gray);
+    cursor: pointer;
+}
+
+.button3:hover{
+    color: var(--Very-light-gray);
+    background-color: var(--Very-dark-cyan);
+    border: 2px solid var(--Very-light-gray);
+    cursor: pointer;
+}
+
+@media (max-width:375px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        height: 86%;
+        
+        width: 90%;
+        
+        border-radius: 10px;
+       
+        
+    }
+    
+}
